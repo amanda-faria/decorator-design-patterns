@@ -7,14 +7,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class PadariaTest {
 
     @Test
-    void deveRetornarDoce() {
+    void deveRetornarSalgado() {
         Padaria padaria = new Salgado("salgado");
 
         assertEquals("salgado", padaria.getTipoPedido());
     }
 
     @Test
-    void deveRetornarPaoComDoce() {
+    void deveRetornarPaoComSalgado() {
         Padaria padaria = new Pao(new Salgado("morango/Pão Francês"));
 
         assertEquals("morango/Pão Francês/Pão Francês", padaria.getTipoPedido());
